@@ -75,6 +75,7 @@ body {
 
 form {
     width: 100%;
+    padding-right: 3em;
 }
 
 input[name='email'] { 
@@ -83,6 +84,7 @@ input[name='email'] {
     border-radius: 99999px;
     outline: none;
     border: 1px solid var(--desat-red);
+
 }
 
 .hero-image-container {
