@@ -19,6 +19,7 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
+    color: var(--desat-red);
     min-height: 100vh;
     background-image: url(./images/bg-pattern-desktop.svg);
     display: flex;
@@ -50,6 +51,19 @@ body {
 .logo-container {
     position: absolute;
     top: 4em;
+}
+
+.title {
+    font-size: 3.5rem;
+    font-weight: 300;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    padding-top: 3rem;
+}
+
+.accent {
+    font-weight: 600;
+    color: black;
 }
 
 .hero-image-container {
