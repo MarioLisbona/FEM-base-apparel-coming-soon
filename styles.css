@@ -39,7 +39,6 @@ body {
 }
 
 .info-container {
-    width: 90vw;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -71,6 +70,19 @@ body {
     padding-right: 2em;
     margin: 2em 0;
     font-weight: 400;
+}
+
+
+form {
+    width: 100%;
+}
+
+input[name='email'] { 
+    width: 100%;
+    padding: 1em 2em;
+    border-radius: 99999px;
+    outline: none;
+    border: 1px solid var(--desat-red);
 }
 
 .hero-image-container {
