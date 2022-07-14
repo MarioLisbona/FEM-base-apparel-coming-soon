@@ -95,7 +95,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 ### Useful resources
 
 - [Example resource 1]https://www.w3schools.com/cssref/css3_pr_background-size.asp) - Backgroiund info
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Example resource 2](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_letter-spacing) - letter spacing
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
