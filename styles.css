@@ -130,6 +130,10 @@ input[name='email'] {
     transform: translate(-400%, -280%);
 }
 
+.error-message {
+    transform: translate(-120%, -280%);
+}
+
 /* .hidden {
     display: none;
 } */
