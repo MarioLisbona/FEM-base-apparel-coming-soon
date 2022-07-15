@@ -132,6 +132,7 @@ input[name='email'] {
 
 .error-message {
     transform: translate(-120%, -280%);
+    color: var(--soft-red);
 }
 
 /* .hidden {
