@@ -118,6 +118,26 @@ input[name='email'] {
     background-size: inherit;
 }
 
+.error-container {
+    /* outline: 1px solid black; */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.error-icon {
+    transform: translate(-400%, -280%);
+}
+
+/* .hidden {
+    display: none;
+} */
+
+.active {
+    display: block;
+}
+
 
 /* Frontend Mentor Footer */
 .attribution {
