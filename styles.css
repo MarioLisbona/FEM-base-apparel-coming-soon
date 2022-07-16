@@ -76,6 +76,7 @@ body {
 form {
     width: 100%;
     padding-right: 3em;
+    position: relative;
 }
 
 input[name='email'] { 
@@ -91,9 +92,13 @@ button {
     border-radius: 99999px;
     outline: none;
     border: 1px solid var(--desat-red);
-    transform: translate(457%, -100%);
+    /* transform: translate(457%, -100%); */
     color: white;
-    font-weight: 600;}
+    font-weight: 600;
+    position: absolute;
+    top: 0px;
+    right: 15px;
+}
 
 button:hover {
     background: linear-gradient(135deg,hsl(0, 0%, 100%) ,hsl(0, 80%, 86%));
@@ -127,11 +132,17 @@ input[name='email'] {
 }
 
 .error-icon {
-    transform: translate(-400%, -280%);
+    /* transform: translate(-400%, -280%); */
+    position: absolute;
+    top: 10px;
+    right: 110px;
 }
 
 .error-message {
-    transform: translate(-120%, -280%);
+    /* transform: translate(-120%, -280%); */
+    position: absolute;
+    bottom: -22px;
+    left: 25px;
     color: var(--soft-red);
 }
 
@@ -144,7 +155,7 @@ input[name='email'] {
 }
 
 
-@media (max-width: 375px) {
+@media (max-width: 1000px) {
     .main-container {
         flex-direction: column-reverse;
         position: relative;
@@ -193,12 +204,7 @@ input[name='email'] {
     }
 
     button {
-        transform: translate(317%, -100%);
-    }
-
-    .error-message {
-    transform: translate(-57%, -280%);
-
+        right: 0px;
     }
 }
 
@@ -206,7 +212,11 @@ input[name='email'] {
 .attribution {
     font-size: 11px;
     text-align: center;
+    position: absolute;
+    right: 200px;
+    bottom: 15px;
+    color: white;
 }
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: black
 }
