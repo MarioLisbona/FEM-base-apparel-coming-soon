@@ -14,17 +14,22 @@ submit.addEventListener('click', function (event)  {
 
     console.log(inputValue);
 
-    if (inputValue.match(emailRegex)) {
-            errorContainer.classList.add('hidden');
-    } else if (inputValue == '') {
-            email.style.outline = '1px solid red';
-            errorContainer.classList.remove('hidden');
-            errorMsg.textContent = 'Email field cannot be empty';
+    checkEmail(inputValue, emailRegex);
+});
+
+
+
+
+function checkEmail (userInput, regex) {
+    if (userInput.match(regex)) {
+        errorContainer.classList.add('hidden');  
+    } else if (userInput == '') {
+        email.style.outline = '1px solid red';
+        errorContainer.classList.remove('hidden');
+        errorMsg.textContent = 'Email field cannot be empty';   
     } else {
         email.style.outline = '1px solid red';
         errorContainer.classList.remove('hidden');
         errorMsg.textContent = 'Please provide a valid email';
     }
-    
-
-});
+};
