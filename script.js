@@ -10,9 +10,8 @@ const emailRegex = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/;
 
 submit.addEventListener('click', function (event)  {
     event.preventDefault();
-    var inputValue = email.value;
 
-    console.log(inputValue);
+    var inputValue = email.value;
 
     checkEmail(inputValue, emailRegex);
 });
@@ -26,7 +25,7 @@ function checkEmail (userInput, regex) {
     } else if (userInput == '') {
         email.style.outline = '1px solid red';
         errorContainer.classList.remove('hidden');
-        errorMsg.textContent = 'Email field cannot be empty';   
+        errorMsg.textContent = 'Email cannot be empty';   
     } else {
         email.style.outline = '1px solid red';
         errorContainer.classList.remove('hidden');
