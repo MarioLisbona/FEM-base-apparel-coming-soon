@@ -21,7 +21,8 @@ submit.addEventListener('click', function (event)  {
 
 function checkEmail (userInput, regex) {
     if (userInput.match(regex)) {
-        errorContainer.classList.add('hidden');  
+        errorContainer.classList.add('hidden');
+        email.style.outline = '1px solid var(--desat-red);'; 
     } else if (userInput == '') {
         email.style.outline = '1px solid red';
         errorContainer.classList.remove('hidden');
