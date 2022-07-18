@@ -92,7 +92,6 @@ button {
     border-radius: 99999px;
     outline: none;
     border: 1px solid var(--desat-red);
-    /* transform: translate(457%, -100%); */
     color: white;
     font-weight: 600;
     position: absolute;
@@ -124,7 +123,6 @@ input[name='email'] {
 }
 
 .error-container {
-    /* outline: 1px solid black; */
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-start;
@@ -132,14 +130,12 @@ input[name='email'] {
 }
 
 .error-icon {
-    /* transform: translate(-400%, -280%); */
     position: absolute;
     top: 10px;
     right: 110px;
 }
 
 .error-message {
-    /* transform: translate(-120%, -280%); */
     position: absolute;
     bottom: -22px;
     left: 25px;
@@ -205,6 +201,10 @@ input[name='email'] {
 
     button {
         right: 0px;
+    }
+
+    .error-icon {
+        right: 90px;
     }
 }
 
