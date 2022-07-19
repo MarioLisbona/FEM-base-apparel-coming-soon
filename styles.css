@@ -26,6 +26,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 .main-container {
@@ -37,6 +38,7 @@ body {
     align-items: center;
     background-image: url(./images/bg-pattern-desktop.svg);
     background-repeat: no-repeat;
+    background-size: 150%;
 }
 
 .info-container {
