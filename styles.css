@@ -166,28 +166,36 @@ input[name='email'] {
     .hero-image-container {
         width: 100%;
         margin-top: 6em;
+        justify-content: center;
+        margin-bottom: -1em;
     }
 
     .info-container {
         padding: 0;
-        width: 80vw;
+        width: 100vw;
         position: unset;
+        padding: 0 2em;
     }
 
     .logo-container {
         position: absolute;
         top: 2em;
+        left: 2em;
     }
 
     .title {
         text-align: center;
         margin-top: 1em;
+        font-size: 2;
+        letter-spacing: 10px;
+
     }
 
     .info {
         text-align: center;
-        margin-top: 2em;
+        margin-top: 1.5em;
         padding: 0;
+        font-weight: 300;
     }
 
     .attribution {
@@ -213,6 +221,11 @@ input[name='email'] {
 
     input[name='email'] {
         margin-bottom: 5em;
+    }
+
+    .error-message {
+        position: absolute;
+        top: 3.3em;
     }
 }
 
