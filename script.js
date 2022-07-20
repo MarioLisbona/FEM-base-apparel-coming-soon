@@ -7,9 +7,8 @@ const errorIcon = document.querySelector('.error-icon');
 
 const emailRegex = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/;
 
-submit.addEventListener('click', checkChar);
 
-function checkChar() {
+email.oninput = function() {
     if (email.value == '') {
         email.style.outline = '1px solid red';
         errorContainer.classList.remove('hidden');
@@ -25,5 +24,4 @@ function checkChar() {
         errorIcon.classList.add('hidden');
         errorContainer.classList.add('hidden');
     }
-    
 }
