@@ -11,7 +11,9 @@ email.oninput = () => {
     checkEmail(email, emailRegex);
 }
 
+
 function checkEmail(email,regex) {
+
     if (email.value == '') {
         email.style.outline = '1px solid red';
         errorContainer.classList.remove('hidden');
