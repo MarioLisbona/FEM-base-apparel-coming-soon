@@ -225,9 +225,9 @@ input[name='email'] {
 
     input[name='email'] {
         margin-bottom: 5em;
-        -webkit-appearance: value;
-        -moz-appearance:    value;
-        appearance:         value;
+        -webkit-appearance: none;
+        -moz-appearance:    none;
+        appearance:         none;
     }
 
     .error-message {
