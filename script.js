@@ -7,10 +7,7 @@ const errorIcon = document.querySelector('.error-icon');
 
 const emailRegex = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/;
 
-submit.addEventListener('click', () => {
-    checkChar();
-    alert("Success!!!")
-});
+submit.addEventListener('click', checkChar);
 
 function checkChar() {
     if (email.value == '') {
