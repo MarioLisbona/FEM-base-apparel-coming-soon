@@ -7,8 +7,11 @@ const errorIcon = document.querySelector('.error-icon');
 
 const emailRegex = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/;
 
+email.oninput = () => {
+    checkEmail(email, emailRegex);
+}
 
-email.oninput = function() {
+function checkEmail(email,regex) {
     if (email.value == '') {
         email.style.outline = '1px solid red';
         errorContainer.classList.remove('hidden');
