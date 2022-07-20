@@ -109,6 +109,8 @@ button:hover {
 }
 
 input[name='email'] {
+    outline: none;
+    border: none;
     padding: 1em 2em;
     border-radius: 99999px;
     outline: none;
