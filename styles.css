@@ -207,7 +207,6 @@ input[name='email'] {
         width: 100%;
         left: 0;
         right: 0;
-        bottom: 15px;
     }
 
     .submit {
@@ -243,7 +242,7 @@ input[name='email'] {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 15px;
+    bottom: 5px;
     color: black;
 }
 .attribution a { 
