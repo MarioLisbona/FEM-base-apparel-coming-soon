@@ -7,34 +7,26 @@ const errorIcon = document.querySelector('.error-icon');
 
 const emailRegex = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/;
 
-
-
-submit.addEventListener('click', function (event)  {
-    event.preventDefault();
-
-    var inputValue = email.value;
-
-    checkEmail(inputValue, emailRegex);
+submit.addEventListener('click', () => {
+    checkChar();
+    alert("Success!!!")
 });
 
-
-
-
-function checkEmail (userInput, regex) {
-    if (userInput.match(regex)) {
-        email.style.outline = '1px solid var(--desat-red)'; 
-        errorContainer.classList.remove('hidden');
-        errorMsg.textContent = 'Email sent successfuly!';
-        errorIcon.classList.add('hidden');
-    } else if (userInput == '') {
+function checkChar() {
+    if (email.value == '') {
         email.style.outline = '1px solid red';
         errorContainer.classList.remove('hidden');
         errorIcon.classList.remove('hidden');
         errorMsg.textContent = 'Email cannot be empty';   
-    } else {
+    } else if (!email.value.match(emailRegex)) {
         email.style.outline = '1px solid red';
         errorContainer.classList.remove('hidden');
         errorIcon.classList.remove('hidden');
         errorMsg.textContent = 'Please provide a valid email';
+    } else if (email.value.match(emailRegex)) {
+        email.style.outline = '1px solid var(--desat-red)'; 
+        errorIcon.classList.add('hidden');
+        errorContainer.classList.add('hidden');
     }
-};
+    
+}
